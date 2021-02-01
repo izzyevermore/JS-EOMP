@@ -3,6 +3,9 @@
 /* Start of landing page */
 
 /* Start of navbar media queries */
+html {
+  scroll-behavior: smooth;
+}
 @media screen and (max-width: 600px) {
   .menu.responsive {
     position: relative;
@@ -41,8 +44,8 @@ a {
   background-size: 556px;
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-image: url("../images/Isaiah-Lakey-\(1\)-min.JPG");
-  background-color: #edf1fd;
+  background-image: url("../images/Isaiah-Lakey-_1_-min-removebg-preview.png");
+  background-color: charcoal;
   background-position-y: 110px;
 }
 nav {
@@ -110,7 +113,7 @@ nav {
   font-size: 40px;
   margin: 0px;
   letter-spacing: 3px;
-  color: #292929;
+  color: #17d1ac;
 }
 .cv-btn {
   width: 200px;
@@ -158,7 +161,7 @@ nav {
   margin: 6px 12px;
 }
 .social i {
-  color: rgba(18, 17, 17, 0.4);
+  color: white;
   font-size: 27px;
 }
 .social a:hover i {
@@ -287,6 +290,11 @@ h2 {
 .skills-py {
   width: 90%;
   background-color: pink;
+}
+
+.skills-mysql {
+  width: 80%;
+  background-color: purple;
 }
 
 .work-header h3 {
@@ -797,3 +805,5 @@ section {
   float: left;
 }
 /* End of contact form */
+
+/* Start of nav bar media queries */
