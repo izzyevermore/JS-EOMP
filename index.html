@@ -10,6 +10,7 @@
 		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 	</head>
 <body>
+	
 <!-- Start of navbar/landing page -->
 	<section id="main">
 		<nav>
@@ -22,9 +23,6 @@
 						<li><a href="#portfolio">Portfolio</a></li>		
 						<li><a href="#Testimonials">Testimonials</a></li>
 						<li><a href="#contact-form">Contact</a></li>	
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-							<i class="fa fa-bars"></i>
-						  </a>
 					</ul>
 		</nav>
 		<div class="name">
@@ -176,37 +174,51 @@
 
 <!-- Start of Testimonials page -->
 	<section id="Testimonials">
-		<!--heading-------------->
-		<section id="testimonial-cards">
-			<h1 class="c-b-heading">Testimonials</h1>
-			<div id="wrapper">
-				<div class="card">
-					<img src="images/abdul-min.jpg">
-					<p><b>Abdul Mohamed Gamiet</b></p>
-					<br>
-					<p>Isaiah has been nothing but a pleasure to work with. Not only does he have a great desire to exceed expectations and excel, he is also a wonderful person to work with and have on your team. If youre looking for a great human asset to add to your team, Isaiah Lekay is your man.</p>
-				</div>
-				<div class="card">
-					<img src="images/photo-min.jpg">
-					<p><b>Britney Bowers</b></p>
-					<br>
-					<p>Isaiah is a hard-working individual who has found his passion for coding in the Python language. He will be an asset to any company due to his determination and perserverance. </p>
-				</div>
-				<div class="card">
-					<img src="images/candice-amon-min.png">
-					<p><b>Candice Amon</b></p>
-					<br>
-					<p>More infor to be stored here.</p>
-				</div>
-				<div class="card">
-					<img src="images/thapelo-tsotetsi-min.jpeg">
-					<p><b>Thapelo Tsotsi</b></p>
-					<br>
-					<p>Isaiah is a motivated, confident and energetic individual who always tries things himself before seeking help from others. His communication skills are very good. He knows when to seek advice/feedback from others</p>
-				</div>
-			</div>
-		</section>
+		<h1 class="c-b-heading">Testimonials</h1>
+		<!-- Carousel -->
+		<div id="carousel">
+			<!-- Carousel Container -->
+			<div id="carousel-container"></div>
+			<!-- Carousel Bullets -->
+			<div id="carousel-bullets"></div>
+			<!-- Carousel Buttons -->
+			<button id="carousel-left" onclick="changeSlide(-1)">
+				<i class="fas fa-angle-left"></i>
+			</button>
+			<button id="carousel-right" onclick="changeSlide(1)">
+				<i class="fas fa-angle-right"></i>
+			</button>
+		</div>
 	</section>
+<!-- <div id="wrapper">
+	<div class="card">
+		<img src="images/abdul-min.jpg">
+		<p><b>Abdul Mohamed Gamiet</b></p>
+		<br>
+		<p>Isaiah has been nothing but a pleasure to work with. Not only does he have a great desire to exceed expectations and excel, he is also a wonderful person to work with and have on your team. If youre looking for a great human asset to add to your team, Isaiah Lekay is your man.</p>
+	</div>
+	<div class="card">
+		<img src="images/photo-min.jpg">
+		<p><b>Britney Bowers</b></p>
+		<br>
+		<p>Isaiah is a hard-working individual who has found his passion for coding in the Python language. He will be an asset to any company due to his determination and perserverance. </p>
+	</div>
+	<div class="card">
+		<img src="images/candice-amon-min.png">
+		<p><b>Candice Amon</b></p>
+		<br>
+		<p>More infor to be stored here.</p>
+	</div>
+	<div class="card">
+		<img src="images/thapelo-tsotetsi-min.jpeg">
+		<p><b>Thapelo Tsotsi</b></p>
+		<br>
+		<p>Isaiah is a motivated, confident and energetic individual who always tries things himself before seeking help from others. His communication skills are very good. He knows when to seek advice/feedback from others</p>
+	</div>
+</div> -->
+
+<!-- </section>
+</section> -->
 <!-- End of Testimonials page -->
 
 <!-- Start of Contact page -->
@@ -226,8 +238,21 @@
 					<font >Email</font>
 					<input type="email" name="email" placeholder="Example@gmail.com"/>
 				</div>
-				<div class="location">
-					<i class="fa fa-map-marker" aria-hidden="true"></i><br><p>Goodwood, 20 Wellington Street<br>Cape Town, 7460</p>
+				<div class="contact-info">
+					<div class="location">
+						<i class="fa fa-map-marker" aria-hidden="true"></i>
+						<p>Goodwood, 20 Wellington Street Cape Town, 7460</p>
+					</div>
+					<div class="contact-number">
+						<br>
+						<i class="fab fa-whatsapp" aria-hidden="true"></i>
+						<p>Work no: 062 558 1844</p>
+					</div>
+					<div class="contact-email">
+						<br>
+						<i class="fas fa-at" aria-hidden="true"></i>
+						<p>Email address: isaiahlekay2001@gmail.com</p>
+					</div>
 				</div>
 			</div>
 			<!--right------------------------------------------->
@@ -242,7 +267,7 @@
 			</div>
 		</form>
 	</section>	
-	<script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+	<!-- <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 	<script type="text/javascript">
 	
 	
@@ -260,7 +285,6 @@
 	</script>
 	<script src="https://smtpjs.com/v3/smtp.js">
 	</script>
-	<!-- Script for the navbar -->
 	<script>
 		function myNav(){
 			var nav1 = document.getElementById("nav");
@@ -270,6 +294,7 @@
 				nav1.className = "menu"
 			}
 		}
-	</script>
+	</script> -->
+	<script type="text/javascript", src="js/testimonials.js"></script>
 </body>
 </html>

@@ -433,65 +433,119 @@ section {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  padding-top: 80px;
 }
 
-#Testimonials {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 200pxrem;
-  background-color: #f4f7ff;
-  margin: 20px 0px;
-  padding-top: 10px;
-}
 .c-b-heading {
   font-size: 2rem;
-  color: #1e1e1e;
+  color: whitesmoke;
   font-family: calibri;
   margin: 10px;
   padding: 5px;
   letter-spacing: 4px;
-  border-bottom: 2px solid #1e1e1e;
+  border-bottom: 2px solid aqua;
   text-align: center;
 }
 
-#wrapper {
+/* Start of Carousel elements */
+#carousel {
+  display: grid;
+  grid-template-rows: 15fr 1fr;
+  grid-template-areas:
+    "leftCaret content rightCaret"
+    ".........bullets.........";
+  justify-items: center;
+  align-items: center;
   text-align: center;
-  height: 300px;
-  padding: 120px;
-  background-color: black;
-  border: solid #17d1ac;
-  border-radius: 10px;
-  padding-top: 30px;
-  float: left;
-  display: table;
-  clear: both;
+  padding-top: 170px;
+}
+/* End of carousel Elements */
+
+/* Start of carousel carets */
+#carousel #carousel-left,
+#carousel #carousel-right {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 4em;
+  color: grey;
+  transition: all 0.2s linear;
 }
 
-.card {
-  height: 336px;
-  text-align: center;
-  background-color: black;
-  border: solid #17d1ac;
-  border-radius: 10px;
-  width: 50%;
-  float: left;
+#carousel #carousel-left:hover,
+#carousel #carousel-right:hover {
+  color: black;
+}
+/* End of carousel carets */
+
+/* Start of carousel grid positioning */
+#carousel #carousel-left {
+  grid-area: leftCaret;
 }
 
-.card img {
-  width: 152px;
-  padding-top: 10px;
-  border-radius: 45%;
-  height: 182px;
+#carousel #carousel-right {
+  grid-area: rightCaret;
 }
+
+#carousel #carousel-container {
+  grid-area: content;
+  position: relative;
+  width: 100%;
+  padding: 2%;
+}
+
+#carousel #carousel-bullets {
+  grid-area: bullets;
+}
+/* End of carousel grid positioning */
+
+/* Start of carousel bullet styles */
+#carousel-bullets .carousel-bullet {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 2px;
+  cursor: pointer;
+}
+
+#carousel #carousel-bullets .fas.fa-circle {
+  transition: all 0.2s linear;
+}
+
+#carousel #carousel-bullets .fas.fa-circle.active {
+  color: grey;
+}
+/* End of carousel bullet styles */
+
+/* Start of carousel slides styles */
+.carousel-slide {
+  opacity: 0;
+  z-index: -2;
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+/* End of carousel slides styles */
+
 /* End of testimonials */
 
 /* Start of contact form */
 #contact-form {
   width: 100%;
-  height: 90vh;
+  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -798,11 +852,38 @@ section {
 
 .location p {
   color: gray;
+  text-align: -moz-center;
+  float: right;
 }
 
 .location i {
   color: gray;
-  float: left;
+}
+
+.contact-number p {
+  color: gray;
+  text-align: -moz-center;
+  float: right;
+  padding-right: 220px;
+}
+
+.contact-number i {
+  color: gray;
+}
+
+.contact-email p {
+  color: gray;
+  text-align: -moz-center;
+  float: right;
+  padding-right: 54px;
+}
+
+.contact-email i {
+  color: gray;
+}
+
+.contact-info {
+  padding-top: 20px;
 }
 /* End of contact form */
 
