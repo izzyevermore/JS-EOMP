@@ -25,12 +25,6 @@ let slideContent = [
         description: "Isaiah is a motivated, confident and energetic individual who always tries things himself before seeking help from others. His communication skills are very good. He knows when to seek advice/feedback from others.",
         image: '(..images/thapelo-tsotetsi-min.jpeg)'
     },
-    {
-        title: "Candice Amon",
-        subtitle: "Head Facilitator",
-        description:"More info coming soon",
-        image: '..images/candice-amon-min.png'
-    }
 ]
 
 let totalSlides = slideContent.length;
