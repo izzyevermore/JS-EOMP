@@ -41,7 +41,7 @@ a {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-size: 556px;
+  background-size: 480px;
   background-position: right bottom;
   background-repeat: no-repeat;
   background-image: url("../images/Isaiah-Lakey-_1_-min-removebg-preview.png");
@@ -222,111 +222,110 @@ h2 {
 /* End of about page */
 
 /* Start of skills page */
-.AboutMe {
-  padding-left: 234px;
-  padding-top: 100px !important;
+.skills {
+  padding: 70px 20px;
+}
+.skills .content .development-wrapper .development-title {
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skills .content .development-wrapper .skills-bar-container {
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+}
+.skills .content .development-wrapper .skills-bar-container li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .progressbar-title {
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .progressbar-title
+  h3 {
+  display: inline-block;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .progressbar-title
+  .percent {
+  position: absolute;
+  right: 20px;
+  font-size: 1.1em;
+}
+.skills .content .development-wrapper .skills-bar-container li .bar-container {
+  background: black;
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .bar-container
+  .progressbar {
+  background: aqua;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+}
+.skills .content .tools-knowledge-wrapper {
+  width: 100%;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper .title,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper .title {
+  color: whitesmoke;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper ul,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper ul li,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: left;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper ul li i,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li i {
+  color: #27ae60;
 }
 
-#skills {
-  width: 93%;
-  font-family: calibri;
-
-  align-items: center;
-  justify-content: center;
+.knowledge-wrapper .knowledge p {
+  color: whitesmoke;
 }
 
-.s-heading h1 {
-  color: #ffffff;
-  font-size: 3rem;
-  margin: 0px;
-  padding: 0px;
-}
-.s-heading p {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1rem;
-  margin: 0px;
-  padding: 0px;
-}
-
-.edu-header {
-  object-position: top;
-  padding: 3px;
-  padding-right: 92px;
-}
-
-.edu-header h2 {
-  color: #ffffff;
-  font-size: 3rem;
-  margin: 0px;
-  padding: 0px;
-}
-
-.edu-header p {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1rem;
-  margin: 0px;
-  padding: 0px;
-  display: block;
-  object-fit: cover;
-}
-
-.container {
-  width: 89%;
-  background-color: gray;
-}
-
-.skills-html {
-  width: 80%;
-  background-color: green;
-}
-.skills-css {
-  width: 70%;
-  background-color: blue;
-}
-.skills-js {
-  width: 70%;
-  background-color: red;
-}
-.skills-py {
-  width: 90%;
-  background-color: pink;
-}
-
-.skills-mysql {
-  width: 80%;
-  background-color: purple;
-}
-
-.work-header h3 {
-  color: #ffffff;
-  font-size: 3rem;
-  margin: 0px;
-  padding: 0px;
-}
-
-.work-content h1 {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1rem;
-  display: block;
-  object-fit: cover;
-}
-
-.work-content h2 {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1rem;
-  display: block;
-  object-fit: cover;
-}
-
-.work-content h3 {
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 1rem;
-  display: block;
-  object-fit: cover;
-}
-
-.work-experience {
-  width: 983px;
+.tools-wrapper .title .tools p {
+  color: whitesmoke;
 }
 /* End of skills page */
 
@@ -390,17 +389,19 @@ h2 {
 }
 .overlay-text h1,
 p {
-  color: #ffffff;
+  color: whitesmoke;
 }
 .overlay-text h1 {
   font-size: 2.2rem;
   margin: 0px;
   padding: 0px;
   letter-spacing: 2px;
+  color: black;
 }
 .overlay-text p {
   font-size: 1.2rem;
   margin: 0px;
+  color: black;
 }
 .p-box:hover .overlay-text {
   display: flex;
@@ -431,9 +432,8 @@ section {
   width: 90%;
   margin: 20px auto;
   position: relative;
-  cursor: pointer;
   overflow: hidden;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .c-b-heading {
@@ -539,6 +539,16 @@ section {
   z-index: 1;
 }
 /* End of carousel slides styles */
+
+.fa-angle-right::before {
+  content: "\f105";
+  cursor: pointer;
+}
+
+.fa-angle-left::before {
+  content: "\f104";
+  cursor: pointer;
+}
 
 /* End of testimonials */
 
@@ -658,7 +668,19 @@ section {
 }
 @media (max-width: 1190px) {
   #main {
-    background-size: 1150px !important;
+    background-size: 253px !important;
+    padding: 62px 18px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: 556px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-image: url("../images/Isaiah-Lakey-_1_-min-removebg-preview.png");
+    background-color: charcoal;
+    background-position-y: 196px;
+    background-position-x: 53px;
   }
   .name {
     left: 10%;
@@ -685,12 +707,11 @@ section {
   }
 }
 @media (max-width: 970px) {
-  #main {
-    background-image: none !important;
-  }
+  /* #main {
+  } */
   .name {
-    left: 50%;
-    top: 50%;
+    left: 64%;
+    top: 20%;
     transform: translate(-50%, -50%);
   }
   .about-model {
@@ -704,7 +725,18 @@ section {
     width: 90%;
   }
   .about-text h1 {
-    font-size: 4rem;
+    font-size: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
   }
 
   .p-container {
@@ -832,58 +864,59 @@ section {
     margin: 0px 10%;
   }
   .name {
-    width: 60%;
+    width: 91%;
   }
 
   .black-line {
     margin-bottom: 20px;
   }
   .social {
-    left: 30px;
+    left: 84px;
     transform: translateX(-10px);
+    top: 89%;
   }
-}
-@media (max-width: 400px) {
-  .s-box {
-    width: 100%;
-    height: 400px;
+  @media (max-width: 400px) {
+    .s-box {
+      width: 100%;
+      height: 400px;
+    }
   }
-}
 
-.location p {
-  color: gray;
-  text-align: -moz-center;
-  float: right;
-}
+  .location p {
+    color: gray;
+    text-align: -moz-center;
+    float: right;
+  }
 
-.location i {
-  color: gray;
-}
+  .location i {
+    color: gray;
+  }
 
-.contact-number p {
-  color: gray;
-  text-align: -moz-center;
-  float: right;
-  padding-right: 220px;
-}
+  .contact-number p {
+    color: gray;
+    text-align: -moz-center;
+    float: right;
+    padding-right: 220px;
+  }
 
-.contact-number i {
-  color: gray;
-}
+  .contact-number i {
+    color: gray;
+  }
 
-.contact-email p {
-  color: gray;
-  text-align: -moz-center;
-  float: right;
-  padding-right: 54px;
-}
+  .contact-email p {
+    color: gray;
+    text-align: -moz-center;
+    float: right;
+    padding-right: 54px;
+  }
 
-.contact-email i {
-  color: gray;
-}
+  .contact-email i {
+    color: gray;
+  }
 
-.contact-info {
-  padding-top: 20px;
+  .contact-info {
+    padding-top: 20px;
+  }
 }
 /* End of contact form */
 
