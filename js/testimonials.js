@@ -11,19 +11,19 @@ let slideContent = [
         title: "Abdul Mohamed Gamiet",
         subtitle: "Peer",
         description: "Isaiah has been nothing but a pleasure to work with. Not only does he have a great desire to exceed expectations and excel, he is also a wonderful person to work with and have on your team. If youre looking for a great human asset to add to your team, Isaiah Lekay is your man.",
-        image: '../images/abdul-min.jpg'
+        image: './images/abdul-min.jpg'
     },
     {
         title: "Britney Bowers",
         subtitle: "Intern",
         description: "Isaiah is a hard-working individual who has found his passion for coding in the Python language. He will be an asset to any company due to his determination and perserverance.",
-        image: '..images/photo-min.jpg'
+        image: './images/photo-min.jpg'
     },
     {
         title: "Thapelo Tsotsesi",
         subtitle: "Lecturer",
         description: "Isaiah is a motivated, confident and energetic individual who always tries things himself before seeking help from others. His communication skills are very good. He knows when to seek advice/feedback from others.",
-        image: '(..images/thapelo-tsotetsi-min.jpeg)'
+        image: './images/thapelo-tsotetsi-min.jpeg'
     },
 ]
 

@@ -64,7 +64,7 @@ nav {
   padding: 10px 50px;
   background-color: #f4f7ff;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
-  z-index: 1;
+  z-index: 10;
 }
 
 .menu {
@@ -389,7 +389,7 @@ h2 {
 }
 .overlay-text h1,
 p {
-  color: whitesmoke;
+  color: grey;
 }
 .overlay-text h1 {
   font-size: 2.2rem;
@@ -450,7 +450,7 @@ section {
 /* Start of Carousel elements */
 #carousel {
   display: grid;
-  grid-template-rows: 15fr 1fr;
+  grid-template-rows: 25fr 1fr;
   grid-template-areas:
     "leftCaret content rightCaret"
     ".........bullets.........";
@@ -468,13 +468,13 @@ section {
   border: none;
   outline: none;
   font-size: 4em;
-  color: grey;
+  color: black;
   transition: all 0.2s linear;
 }
 
 #carousel #carousel-left:hover,
 #carousel #carousel-right:hover {
-  color: black;
+  color: aqua;
 }
 /* End of carousel carets */
 
@@ -492,6 +492,7 @@ section {
   position: relative;
   width: 100%;
   padding: 2%;
+  height: 100%;
 }
 
 #carousel #carousel-bullets {
@@ -514,7 +515,7 @@ section {
 }
 
 #carousel #carousel-bullets .fas.fa-circle.active {
-  color: grey;
+  color: aqua;
 }
 /* End of carousel bullet styles */
 
@@ -537,6 +538,11 @@ section {
 .carousel-slide.active {
   opacity: 1;
   z-index: 1;
+}
+
+.carousel-slide.active img {
+  width: 50%;
+  margin-left: 121px;
 }
 /* End of carousel slides styles */
 
