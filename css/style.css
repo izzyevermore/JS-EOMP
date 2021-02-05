@@ -542,7 +542,8 @@ section {
 
 .carousel-slide.active img {
   width: 50%;
-  margin-left: 121px;
+  margin-left: 104px;
+  margin-bottom: 63px;
 }
 /* End of carousel slides styles */
 
