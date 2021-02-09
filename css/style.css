@@ -230,6 +230,7 @@ h2 {
   font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
+  border-bottom: #17d1ac solid;
 }
 .skills .content .development-wrapper .skills-bar-container {
   position: relative;
@@ -325,6 +326,10 @@ h2 {
 }
 
 .tools-wrapper .title .tools p {
+  color: whitesmoke;
+}
+
+.tools p {
   color: whitesmoke;
 }
 /* End of skills page */
@@ -461,6 +466,14 @@ section {
 }
 /* End of carousel Elements */
 
+/* Start of carousel fonts */
+#carousel-container h2,
+#carousel-container h4 {
+  color: whitesmoke;
+}
+
+/* End of carousel fonts */
+
 /* Start of carousel carets */
 #carousel #carousel-left,
 #carousel #carousel-right {
@@ -468,7 +481,7 @@ section {
   border: none;
   outline: none;
   font-size: 4em;
-  color: black;
+  color: whitesmoke;
   transition: all 0.2s linear;
 }
 
@@ -505,9 +518,8 @@ section {
   background: none;
   border: none;
   outline: none;
-  color: inherit;
+  color: whitesmoke;
   padding: 2px;
-  cursor: pointer;
 }
 
 #carousel #carousel-bullets .fas.fa-circle {
@@ -540,10 +552,13 @@ section {
   z-index: 1;
 }
 
-.carousel-slide.active img {
-  width: 50%;
-  margin-left: 104px;
-  margin-bottom: 63px;
+.carousel-slide .carousel-img {
+  width: 45%;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px auto;
+  /* margin-left: 104px;
+  margin-bottom: 63px; */
 }
 /* End of carousel slides styles */
 
@@ -562,7 +577,7 @@ section {
 /* Start of contact form */
 #contact-form {
   width: 100%;
-  height: 120vh;
+  height: 102vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -888,22 +903,11 @@ section {
       height: 400px;
     }
   }
-
-  .location p {
-    color: gray;
-    text-align: -moz-center;
-    float: right;
-  }
-
-  .location i {
-    color: gray;
-  }
-
   .contact-number p {
     color: gray;
     text-align: -moz-center;
     float: right;
-    padding-right: 220px;
+    padding-right: 51px;
   }
 
   .contact-number i {
@@ -925,6 +929,84 @@ section {
     padding-top: 20px;
   }
 }
+
+.contact-number p {
+  color: gray;
+  text-align: -moz-center;
+  float: right;
+  padding-right: 220px;
+}
+
+.contact-number i {
+  color: gray;
+}
+
+.contact-email p {
+  color: gray;
+  text-align: -moz-center;
+  float: right;
+  padding-right: 54px;
+}
+
+.contact-email i {
+  color: gray;
+}
+
+.contact-info {
+  padding-top: 20px;
+}
 /* End of contact form */
 
-/* Start of nav bar media queries */
+/* Start of testimonials media queries */
+@media (max-width: 1190px) {
+  .carousel-slide.active p {
+    color: gray;
+    font-size: 10px;
+  }
+
+  .carousel-slide.active .carousel-img {
+    width: 110%;
+    height: 246px;
+    object-fit: cover;
+    margin: 10px auto;
+  }
+
+  #carousel {
+    display: grid;
+    grid-template-rows: 25fr 1fr;
+    grid-template-areas: "leftCaret content rightCaret" ".........bullets.........";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 24px;
+  }
+}
+/* End of testimonials media queries */
+/* Start of contact form media queries */
+@media (max-width: 400px) {
+  .contact-number p {
+    color: gray;
+    text-align: -moz-center;
+    float: right;
+    padding-right: 51px;
+  }
+
+  .contact-email p {
+    color: gray;
+    text-align: -moz-center;
+    float: right;
+    padding-right: 18px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+}
+/* End of contact forom media queries */
+
+/* Small piece of media quieries for navbar */
+@media (max-width: 400px) {
+  .toggle {
+    display: none;
+  }
+}
+
+/* End of that small piece for navbar */

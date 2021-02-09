@@ -60,6 +60,7 @@ function createSlide(slide, index){
     // Create content for slides
     let slideImage = document.createElement("img");
     slideImage.src = slide.image;
+    slideImage.classList.add("carousel-img");
 
     let slideHeading = document.createElement("h2");
     slideHeading.innerHTML = slide.title;
