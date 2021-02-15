@@ -1,0 +1,111 @@
+/* Start of skills page */
+.skills {
+  padding: 70px 20px;
+}
+.skills .content .development-wrapper .development-title {
+  color: whitesmoke;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skills .content .development-wrapper .skills-bar-container {
+  position: relative;
+  width: 100%;
+  list-style-type: none;
+}
+.skills .content .development-wrapper .skills-bar-container li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .progressbar-title {
+  color: whitesmoke;
+  margin-bottom: 5px;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .progressbar-title
+  h3 {
+  display: inline-block;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .progressbar-title
+  .percent {
+  position: absolute;
+  right: 20px;
+  font-size: 1.1em;
+}
+.skills .content .development-wrapper .skills-bar-container li .bar-container {
+  background: black;
+  position: relative;
+  width: 100%;
+  height: 10px;
+}
+.skills
+  .content
+  .development-wrapper
+  .skills-bar-container
+  li
+  .bar-container
+  .progressbar {
+  background: aqua;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+}
+.skills .content .tools-knowledge-wrapper {
+  width: 100%;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper .title,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper .title {
+  color: whitesmoke;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper ul,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper ul li,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: left;
+}
+.skills .content .tools-knowledge-wrapper .tools-wrapper ul li i,
+.skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li i {
+  color: #27ae60;
+}
+
+.knowledge-wrapper .knowledge p {
+  color: whitesmoke;
+}
+
+.tools-wrapper .title .tools p {
+  color: whitesmoke;
+}
+
+.tools p {
+  color: whitesmoke;
+}
+/* End of skills page */

@@ -1,0 +1,186 @@
+/* Start of testimonials */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: calibri;
+  width: 100%;
+  min-width: 320px;
+  box-sizing: border-box;
+  box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  text-align: center;
+  padding-top: 20px;
+}
+
+section {
+  width: 90%;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+.c-b-heading {
+  font-size: 2rem;
+  color: whitesmoke;
+  font-family: calibri;
+  margin: 10px;
+  padding: 5px;
+  letter-spacing: 4px;
+  border-bottom: 2px solid aqua;
+  text-align: center;
+}
+
+/* Start of Carousel elements */
+#carousel {
+  display: grid;
+  grid-template-rows: 25fr 1fr;
+  grid-template-areas:
+    "leftCaret content rightCaret"
+    ".........bullets.........";
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 170px;
+}
+/* End of carousel Elements */
+
+/* Start of carousel fonts */
+#carousel-container h2,
+#carousel-container h4 {
+  color: whitesmoke;
+}
+
+/* End of carousel fonts */
+
+/* Start of carousel carets */
+#carousel #carousel-left,
+#carousel #carousel-right {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 4em;
+  color: whitesmoke;
+  transition: all 0.2s linear;
+}
+
+#carousel #carousel-left:hover,
+#carousel #carousel-right:hover {
+  color: aqua;
+}
+/* End of carousel carets */
+
+/* Start of carousel grid positioning */
+#carousel #carousel-left {
+  grid-area: leftCaret;
+}
+
+#carousel #carousel-right {
+  grid-area: rightCaret;
+}
+
+#carousel #carousel-container {
+  grid-area: content;
+  position: relative;
+  width: 100%;
+  padding: 2%;
+  height: 100%;
+}
+
+#carousel #carousel-bullets {
+  grid-area: bullets;
+}
+/* End of carousel grid positioning */
+
+/* Start of carousel bullet styles */
+#carousel-bullets .carousel-bullet {
+  background: none;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 2px;
+}
+
+#carousel #carousel-bullets .fas.fa-circle {
+  transition: all 0.2s linear;
+}
+
+#carousel #carousel-bullets .fas.fa-circle.active {
+  color: aqua;
+}
+/* End of carousel bullet styles */
+
+/* Start of carousel slides styles */
+.carousel-slide {
+  opacity: 0;
+  z-index: -2;
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-slide .carousel-img {
+  width: 45%;
+  height: 250px;
+  object-fit: cover;
+  margin: 10px auto;
+  /* margin-left: 104px;
+    margin-bottom: 63px; */
+}
+/* End of carousel slides styles */
+
+.fa-angle-right::before {
+  content: "\f105";
+  cursor: pointer;
+}
+
+.fa-angle-left::before {
+  content: "\f104";
+  cursor: pointer;
+}
+
+/* End of testimonials */
+
+/* Start of testimonials media queries */
+@media (max-width: 1190px) {
+  .carousel-slide.active p {
+    color: gray;
+    font-size: 10px;
+  }
+
+  .carousel-slide.active .carousel-img {
+    width: 110%;
+    height: 246px;
+    object-fit: cover;
+    margin: 10px auto;
+  }
+
+  #carousel {
+    display: grid;
+    grid-template-rows: 25fr 1fr;
+    grid-template-areas: "leftCaret content rightCaret" ".........bullets.........";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 24px;
+  }
+}
+/* End of testimonials media queries */
