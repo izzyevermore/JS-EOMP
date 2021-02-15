@@ -184,3 +184,12 @@ section {
   }
 }
 /* End of testimonials media queries */
+@media (max-width: 420px) {
+  #carousel-container h4 {
+    padding-top: 10px;
+  }
+
+  #carousel-container p {
+    padding-top: 8px;
+  }
+}

@@ -139,5 +139,26 @@ nav {
     display: none;
   }
 }
-
 /* End of that small piece for navbar */
+
+@media (max-width: 420px) {
+  .logo {
+    padding-left: 29px;
+  }
+
+  .name {
+    width: 370px;
+    top: 18%;
+  }
+
+  #main {
+    background-position-y: 245px;
+    background-position-x: 70px;
+    background-size: 276px !important;
+  }
+
+  .social {
+    top: 84%;
+    left: 28%;
+  }
+}

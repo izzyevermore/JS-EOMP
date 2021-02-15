@@ -240,5 +240,7 @@
 
   .contact-info {
     padding-top: 20px;
+    color: whitesmoke;
+    size: 16px;
   }
 }

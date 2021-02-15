@@ -76,3 +76,15 @@ p {
   display: flex;
 }
 /* End of work portfolio */
+
+@media (max-width: 860px) {
+  .p-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    height: 100%;
+  }
+
+  .p-box {
+    min-height: 30vh;
+  }
+}

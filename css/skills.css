@@ -109,3 +109,34 @@
   color: whitesmoke;
 }
 /* End of skills page */
+
+@media (max-width: 420px) {
+  .development-wrapper .development-title {
+    font-family: calibri;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 340;
+    padding: 10px 5px;
+    background-color: #292929;
+    letter-spacing: 4px;
+    border-radius: 44px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .tools-wrapper .title {
+    padding-right: 116px;
+  }
+
+  .skills .content .tools-knowledge-wrapper .tools-wrapper ul {
+    margin-left: 0px;
+  }
+
+  .content .tools-knowledge-wrapper .knowledge-wrapper .title {
+    padding-right: 92px;
+  }
+  .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
+    list-style-type: none;
+    margin-left: 0px;
+  }
+}
