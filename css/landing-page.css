@@ -4,16 +4,7 @@
 html {
   scroll-behavior: smooth;
 }
-@media screen and (max-width: 600px) {
-  .menu.responsive {
-    position: relative;
-  }
-  .menu.responsive.toggle {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-}
+
 .menu.responsive li {
   float: none;
   display: block;
@@ -39,12 +30,30 @@ a {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
-  background-size: 480px;
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  background-image: url("../images/Isaiah-Lakey-_1_-min-removebg-preview.png");
   background-color: charcoal;
-  background-position-y: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper img {
+  max-width: 100%;
+}
+
+@media (max-width: 1240px) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+.wrapper img {
+  margin-top: 100px;
 }
 nav {
   display: flex;
@@ -95,10 +104,6 @@ nav {
 .name {
   font-family: calibri;
   width: 500px;
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  transform: translate(-20%, -50%);
   font-weight: bold;
 }
 .name p:nth-child(1),
@@ -115,17 +120,16 @@ nav {
 }
 
 .social {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
   display: flex;
+  flex-direction: row-reverse;
+  padding-right: 65px;
 }
 .social a {
   margin: 6px 12px;
 }
 .social i {
   color: white;
-  font-size: 27px;
+  font-size: 42px;
 }
 .social a:hover i {
   color: #17d1ac;
@@ -133,13 +137,36 @@ nav {
 }
 /* End of landing page */
 
-/* Small piece of media quieries for navbar */
-@media (max-width: 400px) {
-  .toggle {
-    display: none;
+/* End of that small piece for navbar */
+
+@media (max-width: 780px) {
+  .logo {
+    padding-left: 212px;
+  }
+
+  .name {
+    top: 25%;
+    width: 445px;
+    left: 31%;
+  }
+
+  #main {
+    background-position-y: 298px;
+    background-position-x: 223px;
+    height: 89vh;
+    background-size: 314px !important;
   }
 }
-/* End of that small piece for navbar */
+@media screen and (max-width: 600px) {
+  .menu.responsive {
+    position: relative;
+  }
+  .menu.responsive.toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
 
 @media (max-width: 420px) {
   .logo {
@@ -158,7 +185,33 @@ nav {
   }
 
   .social {
-    top: 84%;
+    top: 94%;
     left: 28%;
+  }
+}
+/* Small piece of media quieries for navbar */
+@media (max-width: 400px) {
+  .toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 370px) {
+  .name {
+    width: 293px;
+  }
+  .logo {
+    padding-left: 0px;
+  }
+
+  #main {
+    background-position-y: 199px;
+    background-position-x: 43px;
+    background-size: 276px !important;
+  }
+
+  .social {
+    left: 22%;
+    top: 86%;
   }
 }

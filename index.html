@@ -18,23 +18,26 @@
 <body>
 	
 <!-- Start of navbar/landing page -->
+	<nav>
+		<a href="#" class="logo">IZZYEVERMORE</a>
+			<div class="toggle"></div>
+				<ul class="menu" id="nav">
+					<li class="active"><a href="#main" >Home</a></li>	
+					<li><a href="#about">About</a></li>	
+					<li><a href="#SKILLS">Skills</a></li>	
+					<li><a href="#portfolio">Portfolio</a></li>		
+					<li><a href="#Testimonials">Testimonials</a></li>
+					<li><a href="#contact-form">Contact</a></li>	
+				</ul>
+	</nav>
 	<section id="main">
-		<nav>
-			<a href="#" class="logo">IZZYEVERMORE</a>
-				<div class="toggle"></div>
-					<ul class="menu" id="nav">
-						<li class="active"><a href="#main" >Home</a></li>	
-						<li><a href="#about">About</a></li>	
-						<li><a href="#SKILLS">Skills</a></li>	
-						<li><a href="#portfolio">Portfolio</a></li>		
-						<li><a href="#Testimonials">Testimonials</a></li>
-						<li><a href="#contact-form">Contact</a></li>	
-					</ul>
-		</nav>
-		<div class="name">
-			<p>Hello</p>
-			<h1>I'm <font color="white">Isaiah</font> Lekay</h1>
-			<p class="details"> And I am an aspiring Software Developer</p>
+		<div class="wrapper">
+			<div class="name">
+				<p>Hello</p>
+				<h1>I'm <font color="white">Isaiah</font> Lekay</h1>
+				<p class="details"> And I am an aspiring Software Developer</p>
+			</div>
+			<img src="./images/Isaiah-Lakey-_1_-min-removebg-preview.png"" alt="Isaiah Lakey">
 		</div>
 		<div class="social">
 			<a href="#contact-form"><i class="fas fa-at"></i></a>	
@@ -63,7 +66,7 @@
 		<section class="skills">
 			<div class="content">
 				<div class="development-wrapper">
-					<h2 class="development-title">Skills</h2>
+					<h1 class="p-headind">Skills</h1>
 					<ul class="skills-bar-container">
 						<li>
 							<div class="progressbar-title">
@@ -114,7 +117,7 @@
 				</div>
 				<div class="tools-knowledge-wrapper">
 					<div class="tools-wrapper">
-						<h2 class="title">Education</h2>
+						<h2 class="title p-headind">Education</h2>
 						<ul class="tools">
 							<li>
 								<p>The Settlers High School</p>
@@ -126,7 +129,7 @@
 						</ul>
 					</div>
 					<div class="knowledge-wrapper">
-						<h2 class="title">Work Experience</h2>
+						<h2 class="title p-headind">Work Experience</h2>
 						<ul class="knowledge">
 							<li>
 								<p>Top Events (This was for a period of 1 day)</p>
@@ -244,7 +247,7 @@
 
 <!-- Start of Testimonials page -->
 	<section id="Testimonials">
-		<h1 class="c-b-heading">Testimonials</h1>
+		<h1 class="c-b-heading p-headind">Testimonials</h1>
 		<!-- Carousel -->
 		<div id="carousel">
 			<!-- Carousel Container -->
@@ -278,6 +281,15 @@
 					<font >Email</font>
 					<input type="email" name="email" placeholder="Example@gmail.com"/>
 				</div>
+				<div class="location">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.2935946661064!2d18.49047361582903!3d-33.98499183253153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc433bfcf832a1%3A0xfd0cc2fcc1a195a1!2sLife%20Choices%20Academy!5e0!3m2!1sen!2sza!4v1613463173326!5m2!1sen!2sza" width="250" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+				<div class="contact-info">
+					<a href="https://github.com/izzyevermore"><i class="fab fa-github"></i></a>
+					<a href="https://www.instagram.com/isaiah_lekay"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/in/isaiah-lekay-927a2b1bb/"><i class="fab fa-linkedin"></i></a>	
+					<a href="tel: 062 558 1844"><i class="fas fa-phone"></i></a>
+				</div>
 			</div>
 			<!--right------------------------------------------->
 			<div class="contact-right">
@@ -288,12 +300,6 @@
 				</div>
 				<!--submit-btn------------>
 				<button value="Send Email" onclick="sendEmail()">submit</button>
-			</div>
-			<div class="contact-info">
-				<a href="https://github.com/izzyevermore"><i class="fab fa-github"></i></a>
-				<a href="https://www.instagram.com/isaiah_lekay"><i class="fab fa-instagram"></i></a>
-				<a href="https://www.linkedin.com/in/isaiah-lekay-927a2b1bb/"><i class="fab fa-linkedin"></i></a>	
-				<i class="fas fa-phone"></i>
 			</div>
 		</form>
 	</section>	

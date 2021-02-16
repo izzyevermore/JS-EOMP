@@ -23,7 +23,7 @@ section {
   margin: 20px auto;
   position: relative;
   overflow: hidden;
-  padding-top: 40px;
+  padding-top: 69px;
 }
 
 .c-b-heading {
@@ -35,6 +35,8 @@ section {
   letter-spacing: 4px;
   border-bottom: 2px solid aqua;
   text-align: center;
+  width: min-content;
+  margin: auto;
 }
 
 /* Start of Carousel elements */

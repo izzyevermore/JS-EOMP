@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5% 0px 5%;
+  padding: 15px 5% 0px 3%;
   position: relative;
 }
 .about-text {
@@ -66,5 +66,15 @@ h2 {
 
   .about-text p {
     padding-top: 18px;
+  }
+}
+
+@media (max-width: 370px) {
+  #about {
+    width: 114%;
+    height: 123vh;
+  }
+
+  .about-text {
   }
 }
