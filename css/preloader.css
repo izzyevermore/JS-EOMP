@@ -1,5 +1,5 @@
 /* This is for the preloader in the background */
-/* Code was gotten from Jason Wandrag */
+/*Code was gotten from Jason Wandrag and adapted  by me */
 
 /* This is for the div so that it hides the content */
 .preloader {
@@ -10,7 +10,7 @@
   right: 0;
   height: 100vh;
   background-color: #161616;
-  animation: disappear 5s linear forwards;
+  animation: disappear 1s linear forwards;
   display: flex;
   justify-content: center;
   align-items: center;

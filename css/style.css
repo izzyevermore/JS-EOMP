@@ -12,7 +12,6 @@
     background-size: 556px;
     background-position: right bottom;
     background-repeat: no-repeat;
-    /* background-image: url("../images/Isaiah-Lakey-_1_-min-removebg-preview.png"); */
     background-color: charcoal;
     background-position-y: 196px;
     background-position-x: 53px;
@@ -42,8 +41,6 @@
   }
 }
 @media (max-width: 970px) {
-  /* #main {
-  } */
   .name {
     left: 64%;
     top: 20%;

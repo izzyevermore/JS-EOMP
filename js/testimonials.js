@@ -1,5 +1,5 @@
 // This is the javascript for the testimnoials
-// Code gotten from a pen: https://codepen.io/Chryptolite/pen/KKMrXdj
+// Code gotten from a pen: https://codepen.io/Chryptolite/pen/KKMrXdj by Jason Wandrag
 // Fetching the containers in the html
 let slidesContainer = document.getElementById('carousel-container');
 let bulletsContainer = document.getElementById('carousel-bullets');
