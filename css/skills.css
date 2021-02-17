@@ -67,6 +67,8 @@
 }
 .skills .content .tools-knowledge-wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .skills .content .tools-knowledge-wrapper .tools-wrapper,
 .skills .content .tools-knowledge-wrapper .knowledge-wrapper {
@@ -80,11 +82,12 @@
   color: whitesmoke;
   font-size: 2em;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 .skills .content .tools-knowledge-wrapper .tools-wrapper ul,
 .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul {
   list-style-type: none;
-  margin-left: 40px;
+  margin-left: 137px;
 }
 .skills .content .tools-knowledge-wrapper .tools-wrapper ul li,
 .skills .content .tools-knowledge-wrapper .knowledge-wrapper ul li {
