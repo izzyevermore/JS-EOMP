@@ -43,6 +43,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-gap: 10px;
+  padding-top: 10px;
 }
 .overlay-text {
   font-family: calibri;
