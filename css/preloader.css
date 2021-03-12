@@ -1,48 +1,65 @@
 /* This is for the preloader in the background */
-/*Code was gotten from Jason Wandrag and adapted  by me */
-
-/* This is for the div so that it hides the content */
+/* Code was gotten from Jason Wandrag and adapted  by me */
 .preloader {
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  height: 100vh;
-  background-color: #161616;
-  animation: disappear 1s linear forwards;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(#333333, #4c4a4a);
+  animation: dissappear 6s linear forwards;
 }
 
-@keyframes disappear {
-  0%,
-  90% {
+h5 {
+  font-family: Poppins;
+  position: relative;
+  color: #212121;
+  font-size: 150px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-bottom: 18px solid #212121;
+}
+
+h5:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "IZZYEVERMORE...";
+  color: #00ffff;
+  border-bottom: 18px solid #00ffff;
+  overflow: hidden;
+  animation: loading 7s forwards linear;
+}
+
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes dissappear {
+  0% {
     opacity: 1;
     z-index: 100;
   }
+
+  50% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.5;
+  }
+
   100% {
     opacity: 0;
     z-index: -1;
-  }
-}
-/* This is for the spinner in the background */
-
-.loader {
-  border: 16px solid aqua;
-  border-top: 16px solid white;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
